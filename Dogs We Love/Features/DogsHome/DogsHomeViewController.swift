@@ -61,6 +61,7 @@ public final class DogsHomeViewController: UIViewController {
             .outputs
             .components
             .observeOn(MainScheduler.instance)
+            .debounce(0.5, scheduler: MainScheduler.instance)
             .subscribe(onNext: { [weak self] (dogComponents) in
                 self?.update(with: dogComponents)
             }).disposed(by: disposeBag)
