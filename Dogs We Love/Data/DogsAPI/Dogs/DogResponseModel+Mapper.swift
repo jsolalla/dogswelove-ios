@@ -1,5 +1,5 @@
 //
-//  RealmDog+Mapper.swift
+//  DogResponseModel+Mapper.swift
 //  Dogs We Love
 //
 //  Created by Jesus Eduardo Santa Olalla Picazo  (Vendor) on 1/27/20.
@@ -8,12 +8,12 @@
 
 import Foundation
 
-extension RealmDog {
+extension DogResponseModel {
     
     func mapToDog() -> Dog {
-        return Dog(name: name,
-                   description: information,
+        return Dog(name: dogName,
+                   description: description,
                    age: age,
-                   image: image)
+                   image: url)
     }
 }

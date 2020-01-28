@@ -1,0 +1,44 @@
+[
+  {
+    "dogName": "Chief",
+    "description": "Black (formerly) White with black spots, he don't trust anyone",
+    "age": 2,
+    "url": "https://cdn.flickeringmyth.com/wp-content/uploads/2018/03/Isle-of-Dogs-character-posters-1.jpg"
+  },
+  {
+    "dogName": "Spots",
+    "description": "White with black spots, he is a bodyguard",
+    "age": 2,
+    "url": "https://cdn.flickeringmyth.com/wp-content/uploads/2018/03/Isle-of-Dogs-character-posters-4.jpg"
+  },
+  {
+    "dogName": "King",
+    "description": "Red, Brown, White, he believes in democracy",
+    "age": 1,
+    "url": "https://i.pinimg.com/236x/5d/d2/c6/5dd2c65f548b443cdba5eeb1ced9300a.jpg"
+  },
+  {
+    "dogName": "Rex",
+    "description": "Blonde, he like to sleep close to a heater",
+    "age": 2,
+    "url": "https://cdn.flickeringmyth.com/wp-content/uploads/2018/03/Isle-of-Dogs-character-posters-2.jpg"
+  },
+  {
+    "dogName": "Duke",
+    "description": "Gray and White, he is kinda gossip",
+    "age": 2,
+    "url": "https://cdn.flickeringmyth.com/wp-content/uploads/2018/03/Isle-of-Dogs-character-posters-8.jpg"
+  },
+  {
+    "dogName": "Boss",
+    "description": "White with Orange, play sports",
+    "age": 2,
+    "url": "https://cdn.flickeringmyth.com/wp-content/uploads/2018/03/Isle-of-Dogs-character-posters-6.jpg"
+  },
+  {
+    "dogName": "Other Test Dog",
+    "description": "Gray",
+    "age": 5,
+    "url": ""
+  }
+]

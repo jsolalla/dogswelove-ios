@@ -12,7 +12,6 @@
 		853478FA23DFCBE100E40309 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853478F923DFCBE100E40309 /* ViewController.swift */; };
 		853478FF23DFCBE700E40309 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 853478FE23DFCBE700E40309 /* Assets.xcassets */; };
 		8534790223DFCBE700E40309 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8534790023DFCBE700E40309 /* LaunchScreen.storyboard */; };
-		8534790D23DFCBE700E40309 /* Dogs_We_LoveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8534790C23DFCBE700E40309 /* Dogs_We_LoveTests.swift */; };
 		8534791923DFCCFD00E40309 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 8534791823DFCCFD00E40309 /* Moya */; };
 		8534791B23DFCCFD00E40309 /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 8534791A23DFCCFD00E40309 /* RxMoya */; };
 		8534791E23DFCDFE00E40309 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 8534791D23DFCDFE00E40309 /* RxCocoa */; };
@@ -27,6 +26,16 @@
 		8534794023DFD5ED00E40309 /* RealmDog+Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8534793F23DFD5ED00E40309 /* RealmDog+Mapper.swift */; };
 		8534794223DFD68900E40309 /* DogsPersistenceAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8534794123DFD68900E40309 /* DogsPersistenceAPI.swift */; };
 		8534794423DFD70900E40309 /* GetDogsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8534794323DFD70900E40309 /* GetDogsUseCase.swift */; };
+		8534794623DFDA6200E40309 /* RequestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8534794523DFDA6200E40309 /* RequestService.swift */; };
+		8534794823DFDB3E00E40309 /* RequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8534794723DFDB3E00E40309 /* RequestHandler.swift */; };
+		8534794A23DFDC1900E40309 /* RequestSampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8534794923DFDC1900E40309 /* RequestSampleData.swift */; };
+		8534794D23DFDC7800E40309 /* DogsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8534794C23DFDC7800E40309 /* DogsAPI.swift */; };
+		8534794F23DFDC8700E40309 /* DogsEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8534794E23DFDC8700E40309 /* DogsEndpoint.swift */; };
+		8534795123DFDC9600E40309 /* DogResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8534795023DFDC9600E40309 /* DogResponseModel.swift */; };
+		8534795323DFDCA400E40309 /* DogResponseModel+Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8534795223DFDCA400E40309 /* DogResponseModel+Mapper.swift */; };
+		8534795523DFDE5300E40309 /* URL+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8534795423DFDE5300E40309 /* URL+Extensions.swift */; };
+		8534795723DFDEAA00E40309 /* SampleDogsAPI.json in Resources */ = {isa = PBXBuildFile; fileRef = 8534795623DFDEAA00E40309 /* SampleDogsAPI.json */; };
+		8534795923E081C200E40309 /* DogsAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8534795823E081C200E40309 /* DogsAPITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +57,6 @@
 		8534790123DFCBE700E40309 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8534790323DFCBE700E40309 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8534790823DFCBE700E40309 /* Dogs We LoveTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dogs We LoveTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8534790C23DFCBE700E40309 /* Dogs_We_LoveTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dogs_We_LoveTests.swift; sourceTree = "<group>"; };
 		8534790E23DFCBE700E40309 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8534793123DFD1EF00E40309 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		8534793423DFD28B00E40309 /* Dog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
@@ -58,6 +66,16 @@
 		8534793F23DFD5ED00E40309 /* RealmDog+Mapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RealmDog+Mapper.swift"; sourceTree = "<group>"; };
 		8534794123DFD68900E40309 /* DogsPersistenceAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsPersistenceAPI.swift; sourceTree = "<group>"; };
 		8534794323DFD70900E40309 /* GetDogsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDogsUseCase.swift; sourceTree = "<group>"; };
+		8534794523DFDA6200E40309 /* RequestService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestService.swift; sourceTree = "<group>"; };
+		8534794723DFDB3E00E40309 /* RequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestHandler.swift; sourceTree = "<group>"; };
+		8534794923DFDC1900E40309 /* RequestSampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestSampleData.swift; sourceTree = "<group>"; };
+		8534794C23DFDC7800E40309 /* DogsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsAPI.swift; sourceTree = "<group>"; };
+		8534794E23DFDC8700E40309 /* DogsEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsEndpoint.swift; sourceTree = "<group>"; };
+		8534795023DFDC9600E40309 /* DogResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogResponseModel.swift; sourceTree = "<group>"; };
+		8534795223DFDCA400E40309 /* DogResponseModel+Mapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DogResponseModel+Mapper.swift"; sourceTree = "<group>"; };
+		8534795423DFDE5300E40309 /* URL+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Extensions.swift"; sourceTree = "<group>"; };
+		8534795623DFDEAA00E40309 /* SampleDogsAPI.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SampleDogsAPI.json; sourceTree = "<group>"; };
+		8534795823E081C200E40309 /* DogsAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsAPITests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,7 +138,7 @@
 		8534790B23DFCBE700E40309 /* Dogs We LoveTests */ = {
 			isa = PBXGroup;
 			children = (
-				8534790C23DFCBE700E40309 /* Dogs_We_LoveTests.swift */,
+				8534795823E081C200E40309 /* DogsAPITests.swift */,
 				8534790E23DFCBE700E40309 /* Info.plist */,
 			);
 			path = "Dogs We LoveTests";
@@ -174,6 +192,7 @@
 			isa = PBXGroup;
 			children = (
 				8534793C23DFD55C00E40309 /* CoreNetwork */,
+				8534794B23DFDC6600E40309 /* Dogs */,
 			);
 			path = DogsAPI;
 			sourceTree = "<group>";
@@ -217,6 +236,7 @@
 		8534793623DFD2B700E40309 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				8534795423DFDE5300E40309 /* URL+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -224,8 +244,23 @@
 		8534793C23DFD55C00E40309 /* CoreNetwork */ = {
 			isa = PBXGroup;
 			children = (
+				8534794523DFDA6200E40309 /* RequestService.swift */,
+				8534794723DFDB3E00E40309 /* RequestHandler.swift */,
+				8534794923DFDC1900E40309 /* RequestSampleData.swift */,
 			);
 			path = CoreNetwork;
+			sourceTree = "<group>";
+		};
+		8534794B23DFDC6600E40309 /* Dogs */ = {
+			isa = PBXGroup;
+			children = (
+				8534794C23DFDC7800E40309 /* DogsAPI.swift */,
+				8534794E23DFDC8700E40309 /* DogsEndpoint.swift */,
+				8534795023DFDC9600E40309 /* DogResponseModel.swift */,
+				8534795223DFDCA400E40309 /* DogResponseModel+Mapper.swift */,
+				8534795623DFDEAA00E40309 /* SampleDogsAPI.json */,
+			);
+			path = Dogs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -324,6 +359,7 @@
 			files = (
 				8534790223DFCBE700E40309 /* LaunchScreen.storyboard in Resources */,
 				8534793223DFD1EF00E40309 /* Colors.xcassets in Resources */,
+				8534795723DFDEAA00E40309 /* SampleDogsAPI.json in Resources */,
 				853478FF23DFCBE700E40309 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -342,16 +378,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8534795323DFDCA400E40309 /* DogResponseModel+Mapper.swift in Sources */,
 				8534794223DFD68900E40309 /* DogsPersistenceAPI.swift in Sources */,
+				8534794D23DFDC7800E40309 /* DogsAPI.swift in Sources */,
 				8534794423DFD70900E40309 /* GetDogsUseCase.swift in Sources */,
+				8534794823DFDB3E00E40309 /* RequestHandler.swift in Sources */,
 				8534793823DFD39400E40309 /* DogsPersistenceAPIType.swift in Sources */,
+				8534794623DFDA6200E40309 /* RequestService.swift in Sources */,
 				8534793A23DFD3A300E40309 /* DogsAPIType.swift in Sources */,
 				853478FA23DFCBE100E40309 /* ViewController.swift in Sources */,
 				8534794023DFD5ED00E40309 /* RealmDog+Mapper.swift in Sources */,
 				853478F623DFCBE100E40309 /* AppDelegate.swift in Sources */,
 				8534793523DFD28B00E40309 /* Dog.swift in Sources */,
+				8534794A23DFDC1900E40309 /* RequestSampleData.swift in Sources */,
+				8534795523DFDE5300E40309 /* URL+Extensions.swift in Sources */,
+				8534794F23DFDC8700E40309 /* DogsEndpoint.swift in Sources */,
 				853478F823DFCBE100E40309 /* SceneDelegate.swift in Sources */,
 				8534793E23DFD59800E40309 /* RealmDog.swift in Sources */,
+				8534795123DFDC9600E40309 /* DogResponseModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,7 +403,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8534790D23DFCBE700E40309 /* Dogs_We_LoveTests.swift in Sources */,
+				8534795923E081C200E40309 /* DogsAPITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -504,6 +548,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_TEAM = U4B5SM67ER;
 				INFOPLIST_FILE = "Dogs We Love/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -523,6 +568,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_TEAM = U4B5SM67ER;
 				INFOPLIST_FILE = "Dogs We Love/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;

@@ -13,16 +13,16 @@ public struct Dog {
     public let name: String
     public let description: String
     public let age: Int
-    public let imageUrl: URL?
+    public let image: String
     
     public init(name: String,
                 description: String = "",
                 age: Int = 0,
-                imageUrl: URL? = nil) {
+                image: String = "") {
         
         self.name = name
         self.description = description
         self.age = age
-        self.imageUrl = imageUrl
+        self.image = image
     }
 }
