@@ -3,12 +3,14 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DogsHomeViewController" customModule="Dogs_We_Love" customModuleProvider="target">
             <connections>
+                <outlet property="activityIndicator" destination="RY6-QA-0cQ" id="58w-LP-zJ4"/>
                 <outlet property="tableView" destination="ssH-k3-ABc" id="HD6-Pt-49L"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -22,16 +24,31 @@
                     <rect key="frame" x="0.0" y="44" width="414" height="852"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                 </tableView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="RY6-QA-0cQ">
+                    <rect key="frame" x="197" y="443" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="20" id="BSU-7u-NAl"/>
+                        <constraint firstAttribute="height" constant="20" id="zT2-Yz-WFm"/>
+                    </constraints>
+                    <color key="color" name="black"/>
+                </activityIndicatorView>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
+                <constraint firstItem="RY6-QA-0cQ" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="3NX-id-k0Q"/>
                 <constraint firstItem="ssH-k3-ABc" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="6Xs-0M-Ugx"/>
                 <constraint firstItem="ssH-k3-ABc" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="8Y0-cF-goD"/>
                 <constraint firstItem="ssH-k3-ABc" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="X8v-q5-YO7"/>
+                <constraint firstItem="RY6-QA-0cQ" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="aZV-9C-TSr"/>
                 <constraint firstAttribute="bottom" secondItem="ssH-k3-ABc" secondAttribute="bottom" id="lXo-nV-HRU"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="137.68115942028987" y="152.67857142857142"/>
         </view>
     </objects>
+    <resources>
+        <namedColor name="black">
+            <color red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>

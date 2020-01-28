@@ -12,6 +12,8 @@ import RxCocoa
 
 public final class DogsHomeViewController: UIViewController {
     
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    
     @IBOutlet weak var tableView: UITableView! {
         didSet {
             tableView.register(cellType: DogHomeTableViewCell.self)
@@ -70,7 +72,13 @@ public final class DogsHomeViewController: UIViewController {
             .outputs
             .isLoading
             .observeOn(MainScheduler.instance)
-            .subscribe(onNext: { (isLoading) in
+            .subscribe(onNext: { [weak self] (isLoading) in
+                
+                if isLoading {
+                    self?.activityIndicator.startAnimating()
+                } else {
+                    self?.activityIndicator.stopAnimating()
+                }
                 
             }).disposed(by: disposeBag)
     }
