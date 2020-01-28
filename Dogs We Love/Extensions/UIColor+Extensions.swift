@@ -16,11 +16,11 @@ public enum AssetsColor: String {
 
 public extension UIColor {
     
-    class func app(color: AssetsColor) -> UIColor? {
+    class func app(color: AssetsColor) -> UIColor {
         
         guard let assetColor = UIColor(named: color.rawValue) else {
             assertionFailure("The asset color does not exists within assets")
-            return nil
+            return .white
         }
         
         return assetColor

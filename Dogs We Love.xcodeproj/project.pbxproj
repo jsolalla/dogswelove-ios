@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		853478F623DFCBE100E40309 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853478F523DFCBE100E40309 /* AppDelegate.swift */; };
 		853478F823DFCBE100E40309 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853478F723DFCBE100E40309 /* SceneDelegate.swift */; };
-		853478FA23DFCBE100E40309 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853478F923DFCBE100E40309 /* ViewController.swift */; };
 		853478FF23DFCBE700E40309 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 853478FE23DFCBE700E40309 /* Assets.xcassets */; };
 		8534790223DFCBE700E40309 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8534790023DFCBE700E40309 /* LaunchScreen.storyboard */; };
 		8534791923DFCCFD00E40309 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 8534791823DFCCFD00E40309 /* Moya */; };
@@ -37,6 +36,21 @@
 		8534795723DFDEAA00E40309 /* SampleDogsAPI.json in Resources */ = {isa = PBXBuildFile; fileRef = 8534795623DFDEAA00E40309 /* SampleDogsAPI.json */; };
 		8534795923E081C200E40309 /* DogsAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8534795823E081C200E40309 /* DogsAPITests.swift */; };
 		8534795B23E091F600E40309 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8534795A23E091F600E40309 /* UIColor+Extensions.swift */; };
+		8534796023E093F200E40309 /* DogsHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8534795E23E093F200E40309 /* DogsHomeViewController.swift */; };
+		8534796123E093F200E40309 /* DogsHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8534795F23E093F200E40309 /* DogsHomeViewController.xib */; };
+		8534796323E0940300E40309 /* DogsHomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8534796223E0940300E40309 /* DogsHomeViewModel.swift */; };
+		8534796523E0941B00E40309 /* DogsHome+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8534796423E0941B00E40309 /* DogsHome+Factory.swift */; };
+		8534796723E0944300E40309 /* DogsHome+Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8534796623E0944300E40309 /* DogsHome+Components.swift */; };
+		8534796923E0945500E40309 /* DogsHome+Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8534796823E0945500E40309 /* DogsHome+Coordinator.swift */; };
+		8534796B23E0948500E40309 /* DogsHomeViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8534796A23E0948500E40309 /* DogsHomeViewData.swift */; };
+		8595989923E095B900E100BD /* DogsHomeViewModel+Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8595989823E095B900E100BD /* DogsHomeViewModel+Protocols.swift */; };
+		8595989B23E095CB00E100BD /* DogsHomeViewModel+Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8595989A23E095CB00E100BD /* DogsHomeViewModel+Dependencies.swift */; };
+		8595989D23E0989B00E100BD /* DogsHomeViewDataType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8595989C23E0989B00E100BD /* DogsHomeViewDataType.swift */; };
+		859598A023E0998700E100BD /* DogHomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8595989E23E0998700E100BD /* DogHomeTableViewCell.swift */; };
+		859598A123E0998700E100BD /* DogHomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8595989F23E0998700E100BD /* DogHomeTableViewCell.xib */; };
+		859598A323E09FEC00E100BD /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859598A223E09FEC00E100BD /* UIViewController+Extensions.swift */; };
+		859598A523E0A13D00E100BD /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859598A423E0A13D00E100BD /* Coordinator.swift */; };
+		859598A723E0A14800E100BD /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859598A623E0A14800E100BD /* AppCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,7 +67,6 @@
 		853478F223DFCBE100E40309 /* Dogs We Love.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dogs We Love.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		853478F523DFCBE100E40309 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		853478F723DFCBE100E40309 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		853478F923DFCBE100E40309 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		853478FE23DFCBE700E40309 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8534790123DFCBE700E40309 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8534790323DFCBE700E40309 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -78,6 +91,21 @@
 		8534795623DFDEAA00E40309 /* SampleDogsAPI.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SampleDogsAPI.json; sourceTree = "<group>"; };
 		8534795823E081C200E40309 /* DogsAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsAPITests.swift; sourceTree = "<group>"; };
 		8534795A23E091F600E40309 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		8534795E23E093F200E40309 /* DogsHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsHomeViewController.swift; sourceTree = "<group>"; };
+		8534795F23E093F200E40309 /* DogsHomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DogsHomeViewController.xib; sourceTree = "<group>"; };
+		8534796223E0940300E40309 /* DogsHomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsHomeViewModel.swift; sourceTree = "<group>"; };
+		8534796423E0941B00E40309 /* DogsHome+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DogsHome+Factory.swift"; sourceTree = "<group>"; };
+		8534796623E0944300E40309 /* DogsHome+Components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DogsHome+Components.swift"; sourceTree = "<group>"; };
+		8534796823E0945500E40309 /* DogsHome+Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DogsHome+Coordinator.swift"; sourceTree = "<group>"; };
+		8534796A23E0948500E40309 /* DogsHomeViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsHomeViewData.swift; sourceTree = "<group>"; };
+		8595989823E095B900E100BD /* DogsHomeViewModel+Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DogsHomeViewModel+Protocols.swift"; sourceTree = "<group>"; };
+		8595989A23E095CB00E100BD /* DogsHomeViewModel+Dependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DogsHomeViewModel+Dependencies.swift"; sourceTree = "<group>"; };
+		8595989C23E0989B00E100BD /* DogsHomeViewDataType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsHomeViewDataType.swift; sourceTree = "<group>"; };
+		8595989E23E0998700E100BD /* DogHomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogHomeTableViewCell.swift; sourceTree = "<group>"; };
+		8595989F23E0998700E100BD /* DogHomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DogHomeTableViewCell.xib; sourceTree = "<group>"; };
+		859598A223E09FEC00E100BD /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		859598A423E0A13D00E100BD /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		859598A623E0A14800E100BD /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,6 +250,7 @@
 			isa = PBXGroup;
 			children = (
 				8534793323DFD23900E40309 /* Base */,
+				8534795C23E0939900E40309 /* DogsHome */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -229,7 +258,8 @@
 		8534793323DFD23900E40309 /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				853478F923DFCBE100E40309 /* ViewController.swift */,
+				859598A423E0A13D00E100BD /* Coordinator.swift */,
+				859598A623E0A14800E100BD /* AppCoordinator.swift */,
 				8534790023DFCBE700E40309 /* LaunchScreen.storyboard */,
 			);
 			path = Base;
@@ -240,6 +270,7 @@
 			children = (
 				8534795423DFDE5300E40309 /* URL+Extensions.swift */,
 				8534795A23E091F600E40309 /* UIColor+Extensions.swift */,
+				859598A223E09FEC00E100BD /* UIViewController+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -264,6 +295,41 @@
 				8534795623DFDEAA00E40309 /* SampleDogsAPI.json */,
 			);
 			path = Dogs;
+			sourceTree = "<group>";
+		};
+		8534795C23E0939900E40309 /* DogsHome */ = {
+			isa = PBXGroup;
+			children = (
+				8534795D23E093A900E40309 /* Symbols */,
+				8595989723E0954900E100BD /* ViewData */,
+				8534795F23E093F200E40309 /* DogsHomeViewController.xib */,
+				8534796423E0941B00E40309 /* DogsHome+Factory.swift */,
+				8534796623E0944300E40309 /* DogsHome+Components.swift */,
+				8534796823E0945500E40309 /* DogsHome+Coordinator.swift */,
+				8534795E23E093F200E40309 /* DogsHomeViewController.swift */,
+				8534796223E0940300E40309 /* DogsHomeViewModel.swift */,
+				8595989823E095B900E100BD /* DogsHomeViewModel+Protocols.swift */,
+				8595989A23E095CB00E100BD /* DogsHomeViewModel+Dependencies.swift */,
+			);
+			path = DogsHome;
+			sourceTree = "<group>";
+		};
+		8534795D23E093A900E40309 /* Symbols */ = {
+			isa = PBXGroup;
+			children = (
+				8595989C23E0989B00E100BD /* DogsHomeViewDataType.swift */,
+				8595989F23E0998700E100BD /* DogHomeTableViewCell.xib */,
+				8595989E23E0998700E100BD /* DogHomeTableViewCell.swift */,
+			);
+			path = Symbols;
+			sourceTree = "<group>";
+		};
+		8595989723E0954900E100BD /* ViewData */ = {
+			isa = PBXGroup;
+			children = (
+				8534796A23E0948500E40309 /* DogsHomeViewData.swift */,
+			);
+			path = ViewData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -361,8 +427,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8534790223DFCBE700E40309 /* LaunchScreen.storyboard in Resources */,
+				859598A123E0998700E100BD /* DogHomeTableViewCell.xib in Resources */,
 				8534793223DFD1EF00E40309 /* Colors.xcassets in Resources */,
 				8534795723DFDEAA00E40309 /* SampleDogsAPI.json in Resources */,
+				8534796123E093F200E40309 /* DogsHomeViewController.xib in Resources */,
 				853478FF23DFCBE700E40309 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -381,20 +449,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8534796B23E0948500E40309 /* DogsHomeViewData.swift in Sources */,
+				8534796723E0944300E40309 /* DogsHome+Components.swift in Sources */,
+				859598A523E0A13D00E100BD /* Coordinator.swift in Sources */,
+				8595989923E095B900E100BD /* DogsHomeViewModel+Protocols.swift in Sources */,
+				859598A723E0A14800E100BD /* AppCoordinator.swift in Sources */,
+				8534796023E093F200E40309 /* DogsHomeViewController.swift in Sources */,
 				8534795323DFDCA400E40309 /* DogResponseModel+Mapper.swift in Sources */,
 				8534794223DFD68900E40309 /* DogsPersistenceAPI.swift in Sources */,
 				8534794D23DFDC7800E40309 /* DogsAPI.swift in Sources */,
+				8534796523E0941B00E40309 /* DogsHome+Factory.swift in Sources */,
 				8534794423DFD70900E40309 /* GetDogsUseCase.swift in Sources */,
 				8534794823DFDB3E00E40309 /* RequestHandler.swift in Sources */,
 				8534793823DFD39400E40309 /* DogsPersistenceAPIType.swift in Sources */,
 				8534794623DFDA6200E40309 /* RequestService.swift in Sources */,
 				8534793A23DFD3A300E40309 /* DogsAPIType.swift in Sources */,
-				853478FA23DFCBE100E40309 /* ViewController.swift in Sources */,
+				8534796323E0940300E40309 /* DogsHomeViewModel.swift in Sources */,
 				8534794023DFD5ED00E40309 /* RealmDog+Mapper.swift in Sources */,
 				8534795B23E091F600E40309 /* UIColor+Extensions.swift in Sources */,
 				853478F623DFCBE100E40309 /* AppDelegate.swift in Sources */,
+				8595989D23E0989B00E100BD /* DogsHomeViewDataType.swift in Sources */,
 				8534793523DFD28B00E40309 /* Dog.swift in Sources */,
 				8534794A23DFDC1900E40309 /* RequestSampleData.swift in Sources */,
+				8534796923E0945500E40309 /* DogsHome+Coordinator.swift in Sources */,
+				859598A323E09FEC00E100BD /* UIViewController+Extensions.swift in Sources */,
+				8595989B23E095CB00E100BD /* DogsHomeViewModel+Dependencies.swift in Sources */,
+				859598A023E0998700E100BD /* DogHomeTableViewCell.swift in Sources */,
 				8534795523DFDE5300E40309 /* URL+Extensions.swift in Sources */,
 				8534794F23DFDC8700E40309 /* DogsEndpoint.swift in Sources */,
 				853478F823DFCBE100E40309 /* SceneDelegate.swift in Sources */,
