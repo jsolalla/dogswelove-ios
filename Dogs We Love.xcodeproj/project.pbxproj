@@ -36,6 +36,7 @@
 		8534795523DFDE5300E40309 /* URL+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8534795423DFDE5300E40309 /* URL+Extensions.swift */; };
 		8534795723DFDEAA00E40309 /* SampleDogsAPI.json in Resources */ = {isa = PBXBuildFile; fileRef = 8534795623DFDEAA00E40309 /* SampleDogsAPI.json */; };
 		8534795923E081C200E40309 /* DogsAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8534795823E081C200E40309 /* DogsAPITests.swift */; };
+		8534795B23E091F600E40309 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8534795A23E091F600E40309 /* UIColor+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,7 @@
 		8534795423DFDE5300E40309 /* URL+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Extensions.swift"; sourceTree = "<group>"; };
 		8534795623DFDEAA00E40309 /* SampleDogsAPI.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SampleDogsAPI.json; sourceTree = "<group>"; };
 		8534795823E081C200E40309 /* DogsAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsAPITests.swift; sourceTree = "<group>"; };
+		8534795A23E091F600E40309 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -237,6 +239,7 @@
 			isa = PBXGroup;
 			children = (
 				8534795423DFDE5300E40309 /* URL+Extensions.swift */,
+				8534795A23E091F600E40309 /* UIColor+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -388,6 +391,7 @@
 				8534793A23DFD3A300E40309 /* DogsAPIType.swift in Sources */,
 				853478FA23DFCBE100E40309 /* ViewController.swift in Sources */,
 				8534794023DFD5ED00E40309 /* RealmDog+Mapper.swift in Sources */,
+				8534795B23E091F600E40309 /* UIColor+Extensions.swift in Sources */,
 				853478F623DFCBE100E40309 /* AppDelegate.swift in Sources */,
 				8534793523DFD28B00E40309 /* Dog.swift in Sources */,
 				8534794A23DFDC1900E40309 /* RequestSampleData.swift in Sources */,
