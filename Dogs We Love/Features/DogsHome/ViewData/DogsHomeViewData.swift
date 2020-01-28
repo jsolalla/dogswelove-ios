@@ -29,6 +29,6 @@ public struct DogsHomeViewData: DogsHomeViewDataType {
     }
     
     public var imageURL: URL? {
-        return URL(string: dog.image)
+        return URL(string: dog.image.replacingOccurrences(of: " ", with: ""))
     }
 }

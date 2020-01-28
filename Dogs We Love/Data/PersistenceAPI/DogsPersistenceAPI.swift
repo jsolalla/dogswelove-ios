@@ -16,6 +16,6 @@ public final class DogsPersistenceAPI: DogsPersistenceAPIType {
     }
     
     public func getDogs() -> Observable<[Dog]> {
-        return Observable.just([])
+        return .empty()
     }
 }

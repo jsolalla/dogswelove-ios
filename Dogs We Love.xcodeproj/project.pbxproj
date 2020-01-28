@@ -51,6 +51,8 @@
 		859598A323E09FEC00E100BD /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859598A223E09FEC00E100BD /* UIViewController+Extensions.swift */; };
 		859598A523E0A13D00E100BD /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859598A423E0A13D00E100BD /* Coordinator.swift */; };
 		859598A723E0A14800E100BD /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859598A623E0A14800E100BD /* AppCoordinator.swift */; };
+		859598AA23E0A86300E100BD /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = 859598A923E0A86300E100BD /* Nuke */; };
+		859598AC23E0AD4E00E100BD /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859598AB23E0AD4E00E100BD /* UITableView+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,6 +108,7 @@
 		859598A223E09FEC00E100BD /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		859598A423E0A13D00E100BD /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		859598A623E0A14800E100BD /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		859598AB23E0AD4E00E100BD /* UITableView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +118,7 @@
 			files = (
 				8534792523DFCF4300E40309 /* Realm in Frameworks */,
 				8534791E23DFCDFE00E40309 /* RxCocoa in Frameworks */,
+				859598AA23E0A86300E100BD /* Nuke in Frameworks */,
 				8534791B23DFCCFD00E40309 /* RxMoya in Frameworks */,
 				8534792023DFCDFE00E40309 /* RxSwift in Frameworks */,
 				8534792323DFCF4300E40309 /* RealmSwift in Frameworks */,
@@ -271,6 +275,7 @@
 				8534795423DFDE5300E40309 /* URL+Extensions.swift */,
 				8534795A23E091F600E40309 /* UIColor+Extensions.swift */,
 				859598A223E09FEC00E100BD /* UIViewController+Extensions.swift */,
+				859598AB23E0AD4E00E100BD /* UITableView+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -355,6 +360,7 @@
 				8534791F23DFCDFE00E40309 /* RxSwift */,
 				8534792223DFCF4300E40309 /* RealmSwift */,
 				8534792423DFCF4300E40309 /* Realm */,
+				859598A923E0A86300E100BD /* Nuke */,
 			);
 			productName = "Dogs We Love";
 			productReference = 853478F223DFCBE100E40309 /* Dogs We Love.app */;
@@ -410,6 +416,7 @@
 				8534791723DFCCFD00E40309 /* XCRemoteSwiftPackageReference "Moya" */,
 				8534791C23DFCDFE00E40309 /* XCRemoteSwiftPackageReference "RxSwift" */,
 				8534792123DFCF4300E40309 /* XCRemoteSwiftPackageReference "realm-cocoa" */,
+				859598A823E0A86300E100BD /* XCRemoteSwiftPackageReference "Nuke" */,
 			);
 			productRefGroup = 853478F323DFCBE100E40309 /* Products */;
 			projectDirPath = "";
@@ -468,6 +475,7 @@
 				8534794023DFD5ED00E40309 /* RealmDog+Mapper.swift in Sources */,
 				8534795B23E091F600E40309 /* UIColor+Extensions.swift in Sources */,
 				853478F623DFCBE100E40309 /* AppDelegate.swift in Sources */,
+				859598AC23E0AD4E00E100BD /* UITableView+Extensions.swift in Sources */,
 				8595989D23E0989B00E100BD /* DogsHomeViewDataType.swift in Sources */,
 				8534793523DFD28B00E40309 /* Dog.swift in Sources */,
 				8534794A23DFDC1900E40309 /* RequestSampleData.swift in Sources */,
@@ -768,6 +776,14 @@
 				minimumVersion = 4.3.1;
 			};
 		};
+		859598A823E0A86300E100BD /* XCRemoteSwiftPackageReference "Nuke" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kean/Nuke";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.4.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -800,6 +816,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 8534792123DFCF4300E40309 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
 			productName = Realm;
+		};
+		859598A923E0A86300E100BD /* Nuke */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 859598A823E0A86300E100BD /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = Nuke;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

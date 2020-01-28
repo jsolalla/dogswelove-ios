@@ -14,6 +14,9 @@ public final class DogsHomeViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView! {
         didSet {
+            tableView.register(cellType: DogHomeTableViewCell.self)
+            tableView.contentInset = UIEdgeInsets(top: 33, left: 0, bottom: 0, right: 0)
+            tableView.dataSource = dataSource
             tableView.tableFooterView = UIView()
         }
     }
@@ -28,6 +31,8 @@ public final class DogsHomeViewController: UIViewController {
     private let disposeBag = DisposeBag()
     private let viewModel: DogsHomeViewModelType
     private let coordinator: DogsHomeCoordinatorType
+    
+    private lazy var dataSource = makeDataSource()
     
     public init(viewModel: DogsHomeViewModelType,
                 coordinator: DogsHomeCoordinatorType) {
@@ -56,8 +61,8 @@ public final class DogsHomeViewController: UIViewController {
             .outputs
             .components
             .observeOn(MainScheduler.instance)
-            .subscribe(onNext: { (dogComponents) in
-                
+            .subscribe(onNext: { [weak self] (dogComponents) in
+                self?.update(with: dogComponents)
             }).disposed(by: disposeBag)
         
         viewModel
@@ -69,3 +74,33 @@ public final class DogsHomeViewController: UIViewController {
             }).disposed(by: disposeBag)
     }
 }
+
+private extension DogsHomeViewController {
+    
+    enum Section: CaseIterable {
+        case dogs
+    }
+    
+    func makeDataSource() -> UITableViewDiffableDataSource<Section, DogsHomeComponent> {
+        
+        return UITableViewDiffableDataSource(tableView: tableView, cellProvider: {  tableView, indexPath, component in
+            
+            switch component {
+            case .info(let dog):
+                let cell = tableView.dequeueReusableCell(with: DogHomeTableViewCell.self, for: indexPath)
+                cell.configure(viewData: dog)
+                return cell
+            }
+        })
+    }
+    
+    func update(with list: [DogsHomeComponent], animate: Bool = true) {
+        
+        var snapshot = NSDiffableDataSourceSnapshot<Section, DogsHomeComponent>()
+        snapshot.appendSections([Section.dogs])
+        snapshot.appendItems(list, toSection: .dogs)
+
+        dataSource.apply(snapshot, animatingDifferences: animate)
+    }
+}
+    
