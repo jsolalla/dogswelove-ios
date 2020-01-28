@@ -19,4 +19,11 @@ public class RealmDog: Object {
     public override static func primaryKey() -> String? {
         return "name"
     }
+    
+    func from(dog: Dog) {
+        self.name = dog.name
+        self.information = dog.description
+        self.age = dog.age
+        self.image = dog.image
+    }
 }
