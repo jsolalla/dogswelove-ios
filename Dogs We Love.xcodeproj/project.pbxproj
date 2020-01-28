@@ -10,7 +10,6 @@
 		853478F623DFCBE100E40309 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853478F523DFCBE100E40309 /* AppDelegate.swift */; };
 		853478F823DFCBE100E40309 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853478F723DFCBE100E40309 /* SceneDelegate.swift */; };
 		853478FA23DFCBE100E40309 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853478F923DFCBE100E40309 /* ViewController.swift */; };
-		853478FD23DFCBE100E40309 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 853478FB23DFCBE100E40309 /* Main.storyboard */; };
 		853478FF23DFCBE700E40309 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 853478FE23DFCBE700E40309 /* Assets.xcassets */; };
 		8534790223DFCBE700E40309 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8534790023DFCBE700E40309 /* LaunchScreen.storyboard */; };
 		8534790D23DFCBE700E40309 /* Dogs_We_LoveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8534790C23DFCBE700E40309 /* Dogs_We_LoveTests.swift */; };
@@ -20,6 +19,14 @@
 		8534792023DFCDFE00E40309 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 8534791F23DFCDFE00E40309 /* RxSwift */; };
 		8534792323DFCF4300E40309 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 8534792223DFCF4300E40309 /* RealmSwift */; };
 		8534792523DFCF4300E40309 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 8534792423DFCF4300E40309 /* Realm */; };
+		8534793223DFD1EF00E40309 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8534793123DFD1EF00E40309 /* Colors.xcassets */; };
+		8534793523DFD28B00E40309 /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8534793423DFD28B00E40309 /* Dog.swift */; };
+		8534793823DFD39400E40309 /* DogsPersistenceAPIType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8534793723DFD39400E40309 /* DogsPersistenceAPIType.swift */; };
+		8534793A23DFD3A300E40309 /* DogsAPIType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8534793923DFD3A300E40309 /* DogsAPIType.swift */; };
+		8534793E23DFD59800E40309 /* RealmDog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8534793D23DFD59800E40309 /* RealmDog.swift */; };
+		8534794023DFD5ED00E40309 /* RealmDog+Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8534793F23DFD5ED00E40309 /* RealmDog+Mapper.swift */; };
+		8534794223DFD68900E40309 /* DogsPersistenceAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8534794123DFD68900E40309 /* DogsPersistenceAPI.swift */; };
+		8534794423DFD70900E40309 /* GetDogsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8534794323DFD70900E40309 /* GetDogsUseCase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,13 +44,20 @@
 		853478F523DFCBE100E40309 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		853478F723DFCBE100E40309 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		853478F923DFCBE100E40309 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		853478FC23DFCBE100E40309 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		853478FE23DFCBE700E40309 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8534790123DFCBE700E40309 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8534790323DFCBE700E40309 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8534790823DFCBE700E40309 /* Dogs We LoveTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dogs We LoveTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8534790C23DFCBE700E40309 /* Dogs_We_LoveTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dogs_We_LoveTests.swift; sourceTree = "<group>"; };
 		8534790E23DFCBE700E40309 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8534793123DFD1EF00E40309 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		8534793423DFD28B00E40309 /* Dog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
+		8534793723DFD39400E40309 /* DogsPersistenceAPIType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsPersistenceAPIType.swift; sourceTree = "<group>"; };
+		8534793923DFD3A300E40309 /* DogsAPIType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsAPIType.swift; sourceTree = "<group>"; };
+		8534793D23DFD59800E40309 /* RealmDog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmDog.swift; sourceTree = "<group>"; };
+		8534793F23DFD5ED00E40309 /* RealmDog+Mapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RealmDog+Mapper.swift"; sourceTree = "<group>"; };
+		8534794123DFD68900E40309 /* DogsPersistenceAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsPersistenceAPI.swift; sourceTree = "<group>"; };
+		8534794323DFD70900E40309 /* GetDogsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDogsUseCase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,13 +105,14 @@
 		853478F423DFCBE100E40309 /* Dogs We Love */ = {
 			isa = PBXGroup;
 			children = (
+				8534790323DFCBE700E40309 /* Info.plist */,
 				853478F523DFCBE100E40309 /* AppDelegate.swift */,
 				853478F723DFCBE100E40309 /* SceneDelegate.swift */,
-				853478F923DFCBE100E40309 /* ViewController.swift */,
-				853478FB23DFCBE100E40309 /* Main.storyboard */,
-				853478FE23DFCBE700E40309 /* Assets.xcassets */,
-				8534790023DFCBE700E40309 /* LaunchScreen.storyboard */,
-				8534790323DFCBE700E40309 /* Info.plist */,
+				8534793023DFD1CB00E40309 /* Features */,
+				8534792C23DFD12D00E40309 /* Data */,
+				8534792623DFCFDB00E40309 /* Domain */,
+				8534793623DFD2B700E40309 /* Extensions */,
+				8534792B23DFD0CF00E40309 /* Resources */,
 			);
 			path = "Dogs We Love";
 			sourceTree = "<group>";
@@ -109,6 +124,108 @@
 				8534790E23DFCBE700E40309 /* Info.plist */,
 			);
 			path = "Dogs We LoveTests";
+			sourceTree = "<group>";
+		};
+		8534792623DFCFDB00E40309 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				8534792A23DFD01C00E40309 /* Entities */,
+				8534792923DFD01200E40309 /* UseCases */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		8534792923DFD01200E40309 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				8534794323DFD70900E40309 /* GetDogsUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		8534792A23DFD01C00E40309 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				8534793423DFD28B00E40309 /* Dog.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		8534792B23DFD0CF00E40309 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				853478FE23DFCBE700E40309 /* Assets.xcassets */,
+				8534793123DFD1EF00E40309 /* Colors.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8534792C23DFD12D00E40309 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				8534792F23DFD15400E40309 /* GatewayAPI */,
+				8534792E23DFD14900E40309 /* PersistenceAPI */,
+				8534792D23DFD13400E40309 /* DogsAPI */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		8534792D23DFD13400E40309 /* DogsAPI */ = {
+			isa = PBXGroup;
+			children = (
+				8534793C23DFD55C00E40309 /* CoreNetwork */,
+			);
+			path = DogsAPI;
+			sourceTree = "<group>";
+		};
+		8534792E23DFD14900E40309 /* PersistenceAPI */ = {
+			isa = PBXGroup;
+			children = (
+				8534794123DFD68900E40309 /* DogsPersistenceAPI.swift */,
+				8534793D23DFD59800E40309 /* RealmDog.swift */,
+				8534793F23DFD5ED00E40309 /* RealmDog+Mapper.swift */,
+			);
+			path = PersistenceAPI;
+			sourceTree = "<group>";
+		};
+		8534792F23DFD15400E40309 /* GatewayAPI */ = {
+			isa = PBXGroup;
+			children = (
+				8534793923DFD3A300E40309 /* DogsAPIType.swift */,
+				8534793723DFD39400E40309 /* DogsPersistenceAPIType.swift */,
+			);
+			path = GatewayAPI;
+			sourceTree = "<group>";
+		};
+		8534793023DFD1CB00E40309 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				8534793323DFD23900E40309 /* Base */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		8534793323DFD23900E40309 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				853478F923DFCBE100E40309 /* ViewController.swift */,
+				8534790023DFCBE700E40309 /* LaunchScreen.storyboard */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		8534793623DFD2B700E40309 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8534793C23DFD55C00E40309 /* CoreNetwork */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CoreNetwork;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,8 +323,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8534790223DFCBE700E40309 /* LaunchScreen.storyboard in Resources */,
+				8534793223DFD1EF00E40309 /* Colors.xcassets in Resources */,
 				853478FF23DFCBE700E40309 /* Assets.xcassets in Resources */,
-				853478FD23DFCBE100E40309 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,9 +342,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8534794223DFD68900E40309 /* DogsPersistenceAPI.swift in Sources */,
+				8534794423DFD70900E40309 /* GetDogsUseCase.swift in Sources */,
+				8534793823DFD39400E40309 /* DogsPersistenceAPIType.swift in Sources */,
+				8534793A23DFD3A300E40309 /* DogsAPIType.swift in Sources */,
 				853478FA23DFCBE100E40309 /* ViewController.swift in Sources */,
+				8534794023DFD5ED00E40309 /* RealmDog+Mapper.swift in Sources */,
 				853478F623DFCBE100E40309 /* AppDelegate.swift in Sources */,
+				8534793523DFD28B00E40309 /* Dog.swift in Sources */,
 				853478F823DFCBE100E40309 /* SceneDelegate.swift in Sources */,
+				8534793E23DFD59800E40309 /* RealmDog.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,14 +374,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		853478FB23DFCBE100E40309 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				853478FC23DFCBE100E40309 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		8534790023DFCBE700E40309 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
