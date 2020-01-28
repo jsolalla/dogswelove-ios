@@ -50,7 +50,7 @@ public final class DogsHomeViewController: UIViewController {
     // MARK: Setup
     
     private func setupView() {
-        title = "Dogs We Love"
+        title = "dogsWeLove.title".localized
         tableView.backgroundColor = UIColor.app(color: .white)
         view.backgroundColor = UIColor.app(color: .white)
     }

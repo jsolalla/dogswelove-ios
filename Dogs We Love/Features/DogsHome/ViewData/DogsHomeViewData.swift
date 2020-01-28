@@ -25,7 +25,7 @@ public struct DogsHomeViewData: DogsHomeViewDataType {
     }
     
     public var age: String {
-        return "Almost \(dog.age) years"
+        return "dogsWeLove.almost".localized + " \(dog.age) " + "dogsWeLove.years".localized
     }
     
     public var imageURL: URL? {

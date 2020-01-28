@@ -53,6 +53,8 @@
 		859598A723E0A14800E100BD /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859598A623E0A14800E100BD /* AppCoordinator.swift */; };
 		859598AA23E0A86300E100BD /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = 859598A923E0A86300E100BD /* Nuke */; };
 		859598AC23E0AD4E00E100BD /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859598AB23E0AD4E00E100BD /* UITableView+Extensions.swift */; };
+		859598AF23E0DBB700E100BD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 859598B123E0DBB700E100BD /* Localizable.strings */; };
+		859598B323E0DC2600E100BD /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859598B223E0DC2500E100BD /* String+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +111,8 @@
 		859598A423E0A13D00E100BD /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		859598A623E0A14800E100BD /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		859598AB23E0AD4E00E100BD /* UITableView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
+		859598B023E0DBB700E100BD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		859598B223E0DC2500E100BD /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,6 +212,7 @@
 			children = (
 				853478FE23DFCBE700E40309 /* Assets.xcassets */,
 				8534793123DFD1EF00E40309 /* Colors.xcassets */,
+				859598B123E0DBB700E100BD /* Localizable.strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -276,6 +281,7 @@
 				8534795A23E091F600E40309 /* UIColor+Extensions.swift */,
 				859598A223E09FEC00E100BD /* UIViewController+Extensions.swift */,
 				859598AB23E0AD4E00E100BD /* UITableView+Extensions.swift */,
+				859598B223E0DC2500E100BD /* String+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -436,6 +442,7 @@
 				8534790223DFCBE700E40309 /* LaunchScreen.storyboard in Resources */,
 				859598A123E0998700E100BD /* DogHomeTableViewCell.xib in Resources */,
 				8534793223DFD1EF00E40309 /* Colors.xcassets in Resources */,
+				859598AF23E0DBB700E100BD /* Localizable.strings in Resources */,
 				8534795723DFDEAA00E40309 /* SampleDogsAPI.json in Resources */,
 				8534796123E093F200E40309 /* DogsHomeViewController.xib in Resources */,
 				853478FF23DFCBE700E40309 /* Assets.xcassets in Resources */,
@@ -457,6 +464,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8534796B23E0948500E40309 /* DogsHomeViewData.swift in Sources */,
+				859598B323E0DC2600E100BD /* String+Extensions.swift in Sources */,
 				8534796723E0944300E40309 /* DogsHome+Components.swift in Sources */,
 				859598A523E0A13D00E100BD /* Coordinator.swift in Sources */,
 				8595989923E095B900E100BD /* DogsHomeViewModel+Protocols.swift in Sources */,
@@ -516,6 +524,14 @@
 				8534790123DFCBE700E40309 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		859598B123E0DBB700E100BD /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				859598B023E0DBB700E100BD /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
